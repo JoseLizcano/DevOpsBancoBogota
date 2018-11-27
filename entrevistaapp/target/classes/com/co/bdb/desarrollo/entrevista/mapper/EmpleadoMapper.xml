@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.co.bdb.desarrollo.entrevista.mapper.EmpleadoMapper">
+ 
+    <select id="recuperarMensaje" resultType="String">
+         SELECT MENSAJE FROM MENSAJE WHERE NOMBRE= #{nombre}
+    </select>
+  
+</mapper>
